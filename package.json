@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "lit-html": "^1.2.1"
+  }
+}

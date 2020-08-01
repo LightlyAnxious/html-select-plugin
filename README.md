@@ -1,15 +1,11 @@
 # html-select-plugin
 Dependency free, vanilla js plugin, emulating styled html select element
 
-=======
-Install
-=======
+Install =========
 
 Put select.js from /select folder to your project.
 
-==============
-Initialisation
-==============
+Initialisation =========
 
 Create instance of Select class with this options:
 
@@ -17,11 +13,11 @@ Create instance of Select class with this options:
 
 2. Options object that contains:
 
-  placeholder - default placeholder // String
+== placeholder - default placeholder // String
 
-  selectedId - default value that shows after initialisation // String
+== selectedId - default value that shows after initialisation // String
 
-  data - array of objects that contain id & value of select options
+== data - array of objects that contain id & value of select options
 
     Example
       data: [
@@ -32,15 +28,11 @@ Create instance of Select class with this options:
 
 3. onSelect() - optionable callback, by default returns selected option value
 
-=============
-Customization
-=============
+Customization =========
 
 All styles used by default are stored in /select folder
 
-====
-Demo
-====
+Demo =========
 
 This plugin uses parcel to bundle demo.
 To start, type in terminal:

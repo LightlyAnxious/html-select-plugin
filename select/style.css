@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.app {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.wrap {
+  width: 500px;
+}
+.select {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 46px;
+  font-family: "Roboto", sans-serif;
+}
+.select.open .select__dropdown {
+  display: block;
+}
+.select.open .select__input {
+  border-bottom: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' transform=' rotate(180)' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%231B1A17' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+}
+.select.open .select__backdrop {
+  display: block;
+}
+.select__backdrop {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.select__input {
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%231B1A17' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+  background-position: calc(100% - 1rem) 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.select__input:hover, .select__input:focus {
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.075s background-color ease-in;
+}
+.select__dropdown {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.select__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.select__item {
+  border-bottom: 1px solid #ccc;
+}
+.select__item:last-of-type {
+  border-bottom: none;
+}
+.select__btn {
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: left;
+}
+.select__btn:hover, .select__btn:focus {
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.075s background-color ease-in;
+}
+.select__btn.selected {
+  background-color: bisque;
+}
+ 
